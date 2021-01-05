@@ -1,7 +1,5 @@
 #test
-
-for i in range(1,11):
-    print(i)
-
-print('gitTest')
-print('gitTest2')
+'''
+Visual Studio Code 
+git test
+'''
