@@ -90,3 +90,22 @@ oct(13)
 hex(13)
 문자열로 반환됨
 
+###################################
+하나 쓸떄는 그냥 for i in a: 가능한데 인덱스랑 값 쓸꺼면 
+
+a = [2,1,3,2]
+
+for i, v in enumerate(a):
+    print(i)
+    print(v)
+
+list_1 = [(v,i) for i, v in enumerate(a)]   # 이런 식으로 리스트만들수있음 
+
+print(list_1)
+//
+from collections import deque
+
+queue = deque([(v,i) for i, v in enumerate(a)]) # 이런식으로 인덱스와 값을가진 큐도 만들수있음
+
+print(queue)
+    
