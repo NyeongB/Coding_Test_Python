@@ -109,3 +109,11 @@ queue = deque([(v,i) for i, v in enumerate(a)]) # 이런식으로 인덱스와 �
 
 print(queue)
     
+########################################3
+컴페레이터 커스텀
+import functools
+
+def 함수(a,b) :
+
+
+sorted(list_1,key=functools.cmp_to_key(함수))
