@@ -156,3 +156,13 @@ func_2()
 print(a)
 
 ############################################
+조합 내장 함수 이용 
+from itertools import combinations
+
+nums = [1,2,3,4,5]
+com = list(combinations(nums, 4))
+
+print(com)
+
+
+############################################
