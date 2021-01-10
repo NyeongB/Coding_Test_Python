@@ -43,7 +43,7 @@ for string in all_out:
     print(string)
 
 '''
-파이썬에는 딕셔너리라는 자료형이 존재
-hash()랑 함께 쓰이는것같음
-하지만 기본적인 해시 구조로 풀어봄
+핵심은 조합을 구현 
+조합을 튜플형태로 바로 찾아주는 라이브러리가 있긴하지만 직접 구현함 
+from itertools import combinations
 '''
