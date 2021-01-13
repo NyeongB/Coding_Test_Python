@@ -1,11 +1,7 @@
-a = [0,0,1,1]
+a = {}
 
-for index, value in enumerate(a) :
-    if value :
-        print(index, value)
+a[0] = 0
+a[1] = 1
+a[1] = 2
 
-if 0 :
-    print("X")
-
-if 1 :
-    print("O")    
+print(a.get(1,-1))
