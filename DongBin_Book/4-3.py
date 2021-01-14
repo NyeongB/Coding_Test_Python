@@ -1,3 +1,6 @@
+# 21.01.14
+# p.120
+
 n, m = map(int, input().split())
 x, y, d = map(int, input().split())
 map = [list(map(int, input().split())) for _ in range(n)]
@@ -39,3 +42,7 @@ while True :
     result += 1
 
 print(result)
+
+'''
+로봇 청소기랑 비슷한 문제
+'''
