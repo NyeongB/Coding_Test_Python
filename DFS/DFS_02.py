@@ -1,0 +1,20 @@
+'''
+출제 : 백준
+난이도 : 실버 3
+문제 : N과 M(3)
+날짜 : 21.01.14
+유형 : DFS
+'''
+n, m = map(int, input().split())
+output = []
+def dfs(depth):
+    if depth == m :
+        print(' '.join(output))
+        return
+    
+    for i in range(1, n+1):
+        output.append(str(i))
+        dfs(depth + 1)
+        output.pop()
+
+dfs(0)

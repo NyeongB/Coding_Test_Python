@@ -179,3 +179,12 @@ if 0 :
 
 if 1 :
     print("O")    
+
+##########################################3
+
+answer = []
+
+for i in range(5)
+    answer.append(str(i))
+
+print(" ".join(answer)) # 문자열로 된것들만 조인가능
