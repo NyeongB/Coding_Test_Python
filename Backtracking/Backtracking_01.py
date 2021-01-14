@@ -3,7 +3,7 @@
 난이도 : 실버 3
 문제 : N과 M(3)
 날짜 : 21.01.14
-유형 : DFS
+유형 : Backtracking
 '''
 n, m = map(int, input().split())
 output = []
