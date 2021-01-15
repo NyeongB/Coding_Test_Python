@@ -188,3 +188,14 @@ for i in range(5)
     answer.append(str(i))
 
 print(" ".join(answer)) # 문자열로 된것들만 조인가능
+
+##############################################
+우선순위 큐 
+import heapq
+
+a = [5,4,3,2,1,]
+
+heapq.heapify(a)
+heapq.heappush(a,0)
+print(heapq.heappop(a))
+print(a)
