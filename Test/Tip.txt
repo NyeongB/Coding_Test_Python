@@ -248,3 +248,20 @@ def setting(data):
 result = sorted(array, key=setting)
 
 print(result)
+#################################################
+a = [('c',1),('a',4),('b',2),('d',3)]
+
+print(a)
+a = sorted(a, key=lambda x: x[1])   # 두번째 원소로 정렬
+print(a)
+
+a = sorted(a, key=lambda x: x[0], reverse=True)
+print(a)
+
+############################################
+
+문자형, 정수형 데이터 따로따로 받기
+array = []
+for _ in range(n):
+    input_data = input().split()
+    array.append((input_data[0], int(input_data[1])))
