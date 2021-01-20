@@ -1,18 +1,12 @@
+array = [('바나나',2), ('사과',5), ('당근',3)]
 
-n = int(input())
+print(array)
 
-s = ""
+def setting(data):
+    return data[0]
 
-for _ in range(n):
-    s += 'IO'
-s += "I"
+result = sorted(array, key=setting)
 
-pnum = int(input())
-p = input()
-cnt = 0
-for i in range(pnum-2*n):
-    if s in p[i:i+(2*n+1)]:
-        cnt += 1
+print(result)
 
-print(cnt)
 
