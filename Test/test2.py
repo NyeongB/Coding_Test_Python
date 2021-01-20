@@ -1,8 +1,6 @@
-a = [('c',1),('a',4),('b',2),('d',3)]
+a = set()
+a.add(1)
+a.add(2)
+a.add(3)
 
-print(a)
-a = sorted(a, key=lambda x: x[1])
-print(a)
-
-a = sorted(a, key=lambda x: x[0], reverse=True)
-print(a)
+print(1 in a)
