@@ -1,12 +1,5 @@
-array = [('바나나',2), ('사과',5), ('당근',3)]
+a = [1,2]
 
-print(array)
+b = set(a)
 
-def setting(data):
-    return data[0]
-
-result = sorted(array, key=setting)
-
-print(result)
-
-
+print(b)
