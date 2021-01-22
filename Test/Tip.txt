@@ -265,3 +265,14 @@ array = []
 for _ in range(n):
     input_data = input().split()
     array.append((input_data[0], int(input_data[1])))
+
+##############################################
+import sys  
+
+# 빠른입력 가능 
+input_data = sys.stdin.readline().rstrip()  # 마지막 rstrip()은 enter(개행) 없애려 관행적으로 사용
+
+print(input_data)
+
+1111 -> list(map(int,sys.stdin.readline().rstrip()))
+1 1 1 1 -> list(map(int, sys.stdin.readline().rstrip().split()))

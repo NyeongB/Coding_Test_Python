@@ -1,5 +1,7 @@
-a = [1,2]
+import sys
 
-b = set(a)
+a = []
 
-print(b)
+a = list(map(int, sys.stdin.readline().rstrip().split()))
+
+print(a)
