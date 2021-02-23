@@ -277,5 +277,25 @@ print(input_data)
 1111 -> list(map(int,sys.stdin.readline().rstrip()))
 1 1 1 1 -> list(map(int, sys.stdin.readline().rstrip().split()))
 #############################################
-git coomit --amend
 
+기본 받기 
+
+a = list(map(int,input()))  # 1111
+b = list(map(int,input().split()))  # 1 1 1 1
+
+print(a)
+print(b)
+
+###############################################
+이차원 배열 입력 받기
+n = 5
+c = [list(map(int,input().split())) for _ in range(n)]
+
+print(c)
+
+d = [list(map(int, input())) for _ in range(n)]
+
+print(d[1][2])
+
+
+#####################################################3
