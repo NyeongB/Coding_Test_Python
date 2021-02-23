@@ -2,7 +2,7 @@
 출제 : 백준
 난이도 : 실버 3
 문제 : 연결 요소의 개수
-날짜 : 21.02.22
+날짜 : 21.02.23
 유형 : DFS
 '''
 
@@ -20,12 +20,12 @@ for _ in range(m):
 
 def dfs(x) :
     visit[x] = True
-    for i in range(1,n):
+    for i in range(1,n+1):
         if graph[x][i] == 1 and visit[i] == False :
             dfs(i)
 
 
-for i in range(1,n):
+for i in range(1,n+1):
     if visit[i]==False:
         dfs(i)
         count += 1
@@ -33,5 +33,6 @@ for i in range(1,n):
 print(count)
 
 '''
-45% 까지 가고 안감 해결.. 
+파이썬 문법 공부 제대로 해야겠다고 느꼈다..
+반복문의 범위를 헷갈려하다니
 '''
