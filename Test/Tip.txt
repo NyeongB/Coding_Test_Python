@@ -128,6 +128,12 @@ print(int('101101',2))
 print(int('101101',8))
 print(int('AF',16))
 
+앞에 문자가 없이 변환하고 싶을때
+print(format(10,'b'))
+print(format(10,'o'))
+print(format(10,'X'))
+print(format(10,'d'))
+
 ###################################
 하나 쓸떄는 그냥 for i in a: 가능한데 인덱스랑 값 쓸꺼면 
 
