@@ -1,1 +1,5 @@
-print(int(16**0.5))
+r = [1,2]
+
+
+for i in r:
+    print(i)
