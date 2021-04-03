@@ -322,3 +322,13 @@ print(-n)
 import math
 n = math.sqrt(16)
 n = int(16**0.5)
+
+#####################################################
+올림, 내림, 반올림
+import math
+
+a = math.ceil(1.5)  #2
+b = math.floor(1.5) #1
+c = round(1.5)  #2
+
+print(a, b, c)
