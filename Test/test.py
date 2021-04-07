@@ -1,7 +1,2 @@
-import math
-
-a = math.ceil(1.5)  #2
-b = math.floor(1.5) #1
-c = round(1.5)  #2
-
-print(a, b, c)
+arr = [1,2,3,4,5,6]
+print(sum(arr[0:6]))
