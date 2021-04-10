@@ -356,3 +356,18 @@ for i in s:
         print(i)
     else :
         print('문자')
+
+######################################################
+문자열 길이 판별 
+s = 'abcd'
+s1 = 'a'
+s2 = 'abc'
+s3 = 'abcdefg'
+
+arr = [s,s1,s2,s3]
+
+for i in arr:
+    if len(i) in (4,6):
+        print(i + '는 4~6 길이입니다.')
+    else :
+        print(i + '는 4보다 작고 6보다 큽니다.')
