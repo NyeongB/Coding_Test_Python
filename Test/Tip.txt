@@ -371,3 +371,17 @@ for i in arr:
         print(i + '는 4~6 길이입니다.')
     else :
         print(i + '는 4보다 작고 6보다 큽니다.')
+
+###############################################
+리스트 기본
+a = [1,2,3,4,5,6]
+
+del a[0]    # index 삭제
+a.remove(4) # value로 접근 삭제
+print(a)
+
+a.insert(2,4)   # 해당 인덱스의 값 넣기 
+print(a.index(3))   # 위치 반환
+print(a)
+
+print(a.count(1))   # value 값들중 몇개있는지 체크        
