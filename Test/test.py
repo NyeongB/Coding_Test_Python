@@ -1,2 +1,7 @@
-arr = [1,2,3,4,5,6]
-print(sum(arr[0:6]))
+s = 'gfedcbZ'
+
+arr = list(s)
+
+sorted(arr)
+
+print(arr)
