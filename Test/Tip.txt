@@ -346,3 +346,13 @@ print(arr)  #['g', 'f', 'e', 'd', 'c', 'b', 'Z']
 
 arr.sort()  # 직접 바뀌는거
 sorted(arr) # 쏘는거
+
+#####################################################
+숫자 판별 
+s = '1234abcd'
+
+for i in s:
+    if i.isdigit():
+        print(i)
+    else :
+        print('문자')
