@@ -11,7 +11,7 @@ def solution(orders):
             hm[a[0]].add(a[j])
 
     m = []
-
+    print(hm)
     for k,v in hm.items():
         m.append(len(v))
 
