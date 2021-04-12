@@ -1,38 +1,32 @@
+arr = [[0,0,0], [0,0,0], [0,0,0]]
 
-n = int(input())
+print(arr)
+c = 0
 
-<<<<<<< HEAD
-    m = []
-    print(hm)
-    for k,v in hm.items():
-        m.append(len(v))
-=======
-data = []
-answer = []
+def p():
+    l = len(arr)
+    for i in range(l):
+        for j in range(l):
+            print(arr[i][j],end=' ')
+        print()
 
-for _ in range(n):
-    data.append(int(input()))
->>>>>>> 09171ce575002c7d714cfea00f12140e8216d39a
 
-def recursion(n,sum):
-    if n < sum:
-        return 0
-    elif n == sum:
-        return 1
-
-    result = 0
-
-<<<<<<< HEAD
-print(solution(orders))
-=======
-    for i in range(1, 4):
-        result += recursion(n,sum+i)
+def dfs(count):
+    global c
+    if c > 30:
+        return
+    if count == 3:
+        c +=1
+        p()
+        print()
+        return
     
-    return result
+    for i in range(len(arr)):
+        for j in range(len(arr)):
+            if arr[i][j] == 0:
+                arr[i][j] = 1
+                dfs(count + 1)
+                arr[i][j] = 0
 
-for i in data:
-    answer.append(recursion(i,0))
 
-for i in answer:
-    print(i)
->>>>>>> 09171ce575002c7d714cfea00f12140e8216d39a
+dfs(0)
