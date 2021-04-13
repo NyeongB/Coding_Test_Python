@@ -234,9 +234,10 @@ import heapq
 
 a = [5,4,3,2,1,]
 
-heapq.heapify(a)
-heapq.heappush(a,0)
-print(heapq.heappop(a))
+heapq.heapify(a)`# 초기화
+heapq.heappush(a,0) # 푸쉬
+print(heapq.heappop(a)) # 팝
+print(a[0])  # 맨 위에값 보기만 하기
 print(a)
 
 ############################################
