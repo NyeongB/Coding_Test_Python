@@ -1,6 +1,4 @@
-a = set()
-a.add(1)
-a.add(2)
-a.add(3)
-
-print(1 in a)
+n = 3
+m = 4
+a = [[0] * m for _ in range(n)]
+print(a)
