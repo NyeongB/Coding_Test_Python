@@ -229,15 +229,25 @@ for i in range(5)
 print(" ".join(answer)) # 문자열로 된것들만 조인가능
 
 ##############################################
-우선순위 큐 
+최소 힙
 import heapq
 
 a = [5,4,3,2,1,]
 
-heapq.heapify(a)
-heapq.heappush(a,0)
-print(heapq.heappop(a))
+heapq.heapify(a)`# 초기화
+heapq.heappush(a,0) # 푸쉬
+print(heapq.heappop(a)) # 팝
+print(a[0])  # 맨 위에값 보기만 하기
 print(a)
+
+##############################################
+최대 힙
+import heapq
+
+heap = []
+
+heapq.heappush(heap, (-temp, temp)) # push
+heapq.heappop(heap)[1]  # pop
 
 ############################################
 파이썬 스왑 
@@ -387,6 +397,9 @@ print(a.index(3))   # 위치 반환
 print(a)
 
 print(a.count(1))   # value 값들중 몇개있는지 체크        
+=======
+print(a.count(1))   # value 값들중 몇개있는지 체크      
+
 #################################################
 a.reverse() 와 a.sort(reverse=True) 차이점
 
