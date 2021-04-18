@@ -387,7 +387,6 @@ print(a.index(3))   # 위치 반환
 print(a)
 
 print(a.count(1))   # value 값들중 몇개있는지 체크        
-<<<<<<< HEAD
 #################################################
 a.reverse() 와 a.sort(reverse=True) 차이점
 
@@ -404,4 +403,3 @@ q = deque((v,i) for i, v in enumerate(arr))
 print(max(q))
 
 #좀 충격인게 v,i 로 뽑아야지 맥스 가능하고 i, v로 고대로 뽑으면 밸류 부분에서 max()가 안됌
->>>>>>> 09171ce575002c7d714cfea00f12140e8216d39a
