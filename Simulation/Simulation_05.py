@@ -1,3 +1,10 @@
+'''
+출제 : 백준
+난이도 : 실버 1
+문제 : 연산자 끼워넣기
+날짜 : 21.04.18
+유형 : 시뮬레이션
+'''
 from itertools import permutations
 import sys
 
@@ -33,3 +40,8 @@ for i in op:
 
 print(Max)
 print(Min)
+
+'''
+permutation과 set으로 연산자의 조합을 알아내고 
+모든 케이스로 접근한다.
+'''
