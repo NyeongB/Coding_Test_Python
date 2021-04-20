@@ -21,7 +21,7 @@ dir = [(1,0),(-1,0),(0,1),(0,-1)]
 
 
 def find_min(t, x, y, size):
-
+    
     graph[x][y] = 0
     queue = deque()
     queue.append((t,x,y))
