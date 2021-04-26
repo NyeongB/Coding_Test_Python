@@ -1,23 +1,7 @@
-# 방향 조정
-d_flag = [] 
-d_flag.append(2)
-d_flag.append(2)
-d_flag.append(0)
-d_flag.append(6)
+n = int(input())
 
+arr = list(map(int, input().split()))
 
-flag = 0
-odd, even = 0,0
-print(d_flag)
-for i, v in enumerate(d_flag):
-    if i ==0:
-        if v % 2 ==0:
-            even = 1
-        else:
-            odd = 1
-    else:
-        if odd == 1 and v % 2 == 0:
-            flag = 1
-        elif even == 1 and v% 2 !=0:
-            flag = 1
-print(flag)
+arr2 = list(set(arr))
+
+print(len(arr2))
