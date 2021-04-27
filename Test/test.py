@@ -1,1 +1,6 @@
-print('{0:0.4f}'.format(3.141592))
+name = 'choi'
+age = 29
+
+s = f'My name is {name} and My age is {age}'
+
+print(s)
