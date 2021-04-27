@@ -1,7 +1,1 @@
-n = int(input())
-
-arr = list(map(int, input().split()))
-
-arr2 = list(set(arr))
-
-print(len(arr2))
+print('{0:0.4f}'.format(3.141592))
