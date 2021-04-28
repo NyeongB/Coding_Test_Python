@@ -1,6 +1,17 @@
-name = 'choi'
-age = 29
+# 문자열 치환
+a = 'My name is 29'
 
-s = f'My name is {name} and My age is {age}'
+print(a.replace('name', 'age'))
+#=========================================================
+# 문자열 나누기
+a = 'a:b:c:d'
+print(a.split(':')) #':'기준
+#=========================================================
+# 공백제거 
+a = '   abc    '
+print(a.lstrip())
 
-print(s)
+print(a.rstrip())
+
+print(a.strip())
+#=========================================================
