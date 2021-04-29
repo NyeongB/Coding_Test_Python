@@ -1,17 +1,12 @@
-# 문자열 치환
-a = 'My name is 29'
+from itertools import combinations
 
-print(a.replace('name', 'age'))
-#=========================================================
-# 문자열 나누기
-a = 'a:b:c:d'
-print(a.split(':')) #':'기준
-#=========================================================
-# 공백제거 
-a = '   abc    '
-print(a.lstrip())
+a = [1,2,3,4,5]
 
-print(a.rstrip())
+arr = list( list(combinations(a,1)) )
 
-print(a.strip())
-#=========================================================
+print(arr[0][0])
+print(arr[2][0])
+print(len(arr[1]))
+
+
+

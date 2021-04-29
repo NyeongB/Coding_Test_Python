@@ -30,6 +30,7 @@ def bfs(x, y):
     q = deque()
     q.append((x,y,0))
     visited = set()
+    visited.add((x,y))
     ans = 0
     while q:
         x, y, d = q.popleft()
@@ -45,15 +46,16 @@ def bfs(x, y):
 
     return ans
 
-
-
 while start_points:
     x, y = start_points.popleft()
 
     Max = max(bfs(x, y), Max)
-
+    #print(x,y,Max)
 print(Max)
 
+'''
+처음 BFS를 돌때 초기로 방문한 x,y에 값을 방문처리를 안해서 오류가 났다.
+bfs할때 항상 자기 자신을 방문처리하는 습관을 기른다.
 
-
+'''
 

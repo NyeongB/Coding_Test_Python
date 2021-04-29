@@ -428,3 +428,10 @@ for k in range(h):
     for i in range(n):
         for j in range(m):
             print(arr[k][i][j])
+
+===============================================================================
+# 2차원 배열 간편 출력
+arr = [[0] * 4 for _ in range(4)]
+
+for i in arr:
+    print(' '.join(map(str,i)),end='\n')
