@@ -29,8 +29,8 @@ for i in range(n):
 def bfs(x, y):
     q = deque()
     q.append((x,y,0))
-    visited = set()
-    visited.add((x,y))
+    visited = dict()
+    visited[(x,y)] = 1
     ans = 0
     while q:
         x, y, d = q.popleft()
@@ -39,9 +39,9 @@ def bfs(x, y):
             nx = x + dx[i]
             ny = y + dy[i]
 
-            if 0 <= nx < n and 0 <= ny < m and (nx, ny) not in visited:
+            if 0 <= nx < n and 0 <= ny < m and visited.get((nx,ny),-1) == -1:
                 if graph[nx][ny] == 'L':
-                    visited.add((nx,ny))
+                    visited[(nx,ny)] = 1
                     q.append((nx,ny,d+1))
 
     return ans

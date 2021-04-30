@@ -1,12 +1,12 @@
-from itertools import combinations
+a = {}
 
-a = [1,2,3,4,5]
+a[1] = 1
+a[2] = 2
+a[3] = 3
 
-arr = list( list(combinations(a,1)) )
+print(a)
 
-print(arr[0][0])
-print(arr[2][0])
-print(len(arr[1]))
+print(a.keys())
 
-
-
+for idx,v in enumerate(a.keys()):
+    print(idx,v)
