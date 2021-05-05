@@ -6,25 +6,33 @@
 유형 : 수열
 '''
 
-
-from itertools import permutations
+import sys
+input = sys.stdin.readline
 
 n = int(input())
-a = tuple(map(int, input().split()))
-nums = [i for i in range(1,n+1)]
+lst = list(map(int, input().split()))
 
-arr = list(permutations(nums,n))
+def prev_permutation(lst):
+    if len(lst) == 1:
+        return [-1]
+    for i in range(len(lst) - 1, 0, -1):
+        if lst[i] <= lst[i - 1]:
+            break
+    if i == 1 and lst[0] < lst[1]:
+        return [-1]
+    # i - 1 인덱스에 위치한애가 바뀔 것이여
+    for j in range(len(lst) - 1, 0 , -1):
+        if lst[j] <= lst[i - 1]:
+            break
+    # j 인덱스하고 바뀔 것이여
+    tmp = lst[j]
+    lst[j] = lst[i - 1]
+    lst[i - 1] = tmp
+    print(i,j)
+    lst = lst[:i] + sorted(lst[i:], reverse=True)
+    return lst
 
-for i,v in enumerate(arr):
-    if v == a:
-        idx = i
-        break
-
-
-if idx ==0:
-    print(-1)
-else:
-    print(' '.join(map(str,arr[idx-1])))
+print(' '.join(map(str, prev_permutation(lst))))
 
     
 '''
