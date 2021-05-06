@@ -91,3 +91,12 @@ for i in range(3):
     del a[i+1]
 
 print(a)
+
+================================================
+# 아무것도 안쓸거면 pass
+flag = True
+
+if flag:
+    pass
+else:
+    print("False")

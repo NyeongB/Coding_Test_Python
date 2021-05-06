@@ -1,6 +1,6 @@
-arr1 = [1,2,3,4,5]
-arr2 = [1,2,3,4,5]
+flag = True
 
-
-if arr1 == [1,2,3,4,5]:
-    print("값이 같은거?")
+if flag:
+    pass
+else:
+    print("False")
