@@ -1,6 +1,7 @@
-flag = True
+def say():
+    return 'Hi'
 
-if flag:
-    pass
-else:
-    print("False")
+print(say())
+a = say()
+
+print(a)

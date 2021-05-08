@@ -100,3 +100,19 @@ if flag:
     pass
 else:
     print("False")
+
+=============================================
+# 한줄 조건식에 따른 대입
+meassage = ''
+
+a = 50
+
+meassage = 'success' if a > 60 else 'fail'
+
+print(meassage)
+===========================================
+# for 문 + tuple 리스트 조합 
+arr = [(1,2,3),(2,3,4),(3,4,5)]
+
+for i,j,k in arr:
+    print(i,j,k)
