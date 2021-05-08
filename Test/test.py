@@ -1,7 +1,3 @@
-def say():
-    return 'Hi'
+s = input('숫자를 입력하세요: ')
 
-print(say())
-a = say()
-
-print(a)
+print(s)
