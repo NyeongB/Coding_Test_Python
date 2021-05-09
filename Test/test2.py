@@ -1,2 +1,7 @@
-for i in range(4, 0, -1):
-    print(i)
+arr = []
+
+arr.append(0)
+arr.append(0)
+arr.append(0)
+
+print(max(arr))
