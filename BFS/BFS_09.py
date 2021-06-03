@@ -5,6 +5,7 @@
 날짜 : 21.04.19
 유형 : BFS
 '''
+
 from collections import deque
 import heapq
 
@@ -76,7 +77,5 @@ while True:
 print(time)
 
 '''
-heap 과 bfs 쓰는 문제
-레퍼런스를 보고 이해하는데도 굉장히 오래걸렸다
-바로 다시 풀어본다.
+다시 풀어봐도 좋은문제
 '''
